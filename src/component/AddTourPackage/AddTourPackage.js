@@ -21,7 +21,7 @@ const AddTourPackage = () => {
 
     return (
         <div className="add-tour">
-            <h1>Plase add a Tour Trip </h1>
+            <h1 className="text-warning my-5">Plase add Your choice Tour Trip </h1>
 
 
             <form onSubmit={handleSubmit(onSubmit)}>
