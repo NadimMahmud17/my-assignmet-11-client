@@ -12,6 +12,7 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './component/Login/PrivateRoute/PrivateRoute';
 import AddTourPackage from './component/AddTourPackage/AddTourPackage';
 import Management from './component/ManageMent/Management';
+import Address from './component/Address/Address';
 
 function App() {
   return (
@@ -47,6 +48,10 @@ function App() {
         <PrivateRoute path="/management">
           <Management></Management>
         </PrivateRoute>
+
+        <Route path="/address">
+          <Address></Address>
+        </Route>
 
         <Route path="*">
         <NotFound></NotFound>

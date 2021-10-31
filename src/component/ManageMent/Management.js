@@ -32,11 +32,13 @@ const Management = () => {
             <br />
             <br />
             {
-                services.map(service => <div key={service._id}>
+                services.map(service => <div className="d-flex justify-content-evenly my-3"
+                
+                key={service._id}>
 
-                        <h3>Tripe Name: {service.Name}</h3>
-                        <button onClick={() => handleDelete(service._id)}>Delete</button>
-                        <button>Update</button>
+                        <h3>location Name: {service.Name}</h3>
+                        <button className="btn btn-danger" onClick={() => handleDelete(service._id)}>Delete</button>
+                        <button className="btn btn-secondary">Update</button>
                 </div>)
             }
 

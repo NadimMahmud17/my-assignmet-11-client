@@ -7,19 +7,19 @@ import useAuth from '../../../Hooks/useAuth';
 const Header = () => {
 
   const {user, logOut} = useAuth();
-
+//  console.log(user);
     return (
         <Navbar bg="primary"expand="lg" variant="dark" sticky="top" >
   <Container>
-    <Navbar.Brand as={Link} to="/home">Tour services</Navbar.Brand>
+    <Navbar.Brand as={Link} to="/home">Tour List</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
       
-      <Navbar.Brand as={Link} to="/addtour">Add Tripe </Navbar.Brand>
+      <Navbar.Brand as={Link} to="/addtour">Add Chocice </Navbar.Brand>
       <Navbar.Brand as={Link} to="/management">Management </Navbar.Brand>
 
-      <Navbar.Brand as={Link} to="/about">Contract Us</Navbar.Brand>
+      <Navbar.Brand as={Link} to="/about">About Us</Navbar.Brand>
         
       </Nav>
       <Navbar.Text>
